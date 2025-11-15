@@ -5,10 +5,10 @@
  */
 
 // --- Database Credentials ---
-define('DB_NAME', 'ichm_db'); 
-define('DB_USER', 'root'); 
-define('DB_PASSWORD', ''); 
-define('DB_HOST', 'localhost'); 
+define('DB_NAME', 'if0_40427412_ichm_db');     // New Database Name
+define('DB_USER', 'if0_40427412');            // New Username
+define('DB_PASSWORD', 'YOUR_HOSTING_PASSWORD'); // **Replace this with your InfinityFree password**
+define('DB_HOST', 'sql201.infinityfree.com');  // New Hostname
 // --- End of Credentials ---
 
 
@@ -22,5 +22,6 @@ if ($conn->connect_error) {
 
 // Set the character set (This fixes the fatal error)
 $conn->set_charset("utf8mb4");
+
 
 ?>
