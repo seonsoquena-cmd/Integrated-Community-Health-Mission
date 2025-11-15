@@ -5,10 +5,10 @@
  */
 
 // --- Database Credentials ---
-define('DB_NAME', 'if0_40427412_ichm_db');     // New Database Name
-define('DB_USER', 'if0_40427412');            // New Username
-define('DB_PASSWORD', 'YOUR_HOSTING_PASSWORD'); // **Replace this with your InfinityFree password**
-define('DB_HOST', 'sql201.infinityfree.com');  // New Hostname
+define('DB_NAME', 'test');
+define('DB_USER', '39J7MiwX6J8DEds.root');
+define('DB_PASSWORD', 'LZXEk4htmOlqTmkRQ'); 
+define('DB_HOST', 'gateway01.us-east-1.prod.aws.tidbcloud.com');
 // --- End of Credentials ---
 
 
@@ -25,3 +25,4 @@ $conn->set_charset("utf8mb4");
 
 
 ?>
+
