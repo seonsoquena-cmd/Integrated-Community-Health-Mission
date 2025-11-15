@@ -6,8 +6,8 @@
 
 // --- Database Credentials ---
 define('DB_NAME', 'test');
-define('DB_USER', '39J7MiwX6J8DEds.root');
-define('DB_PASSWORD', 'LZXEk4htmOlqTmkRQ'); 
+define('DB_USER', '39J7mWXi5J8DEd6.root');
+define('DB_PASSWORD', '3KlICjra7l8ib6yr'); 
 define('DB_HOST', 'gateway01.us-east-1.prod.aws.tidbcloud.com');
 // --- End of Credentials ---
 
@@ -31,3 +31,4 @@ if (!mysqli_real_connect($conn, DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, 4000, NU
 $conn->set_charset("utf8mb4");
 
 ?>
+
