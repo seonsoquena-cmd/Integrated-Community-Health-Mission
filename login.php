@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // *** MODIFIED SQL: Select 'password_text' instead of 'password_hash' ***
-    $sql = "SELECT user_id, username, password_text, role, full_name FROM users WHERE username = ?";
+    // *** FINAL FIX APPLIED HERE: Using test.users to avoid "Table doesn't exist" error ***
+    $sql = "SELECT user_id, username, password_text, role, full_name FROM test.users WHERE username = ?";
     
     if ($stmt = $conn->prepare($sql)) {
         $stmt->bind_param("s", $username);
@@ -100,5 +100,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // If login failed, redirect back to login page
 header("location: index.php"); 
 exit;
+
 
 ?>
