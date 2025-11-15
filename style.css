@@ -1,0 +1,44 @@
+/*
+ * Integrated Community Health Mission Management System - Custom Styles
+ */
+
+/* Global Font and Body Setup */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    /* This is the default background for dashboards */
+    background-color: #f0f4f8; 
+}
+
+/* Specific Login Background */
+.login-bg {
+    background-color: #f7f7f7;
+}
+
+/* Sidebar Custom Styling */
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+/* Dashboard Card Styling */
+.dashboard-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
+}
+
+/* Mobile Nav Toggle Icon Animation */
+@media (max-width: 768px) {
+    .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background: #374151; /* Dark gray */
+        transition: all 0.3s ease-in-out;
+    }
+}
